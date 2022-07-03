@@ -26,7 +26,7 @@ We want to decrypt the flag so we'll choose the `-d` option:
 $ python3 ./ende.py -d flag.txt.en
 Please enter the password:
 ```
-The script is requesting a password. Luckily for us, we have the password in the `pw.txt` file. We can enter the password manually or use piping:
+The script is requesting a password. Luckily for us, we have the password in the `pw.txt` file. We can enter the password manually or use [pipelines](https://www.gnu.org/software/bash/manual/html_node/Pipelines.html):
 ```sh
 $ cat pw.txt | python3 ./ende.py -d flag.txt.en
 Please enter the password:picoCTF{4p0110_1n_7h3_h0us3_********}
