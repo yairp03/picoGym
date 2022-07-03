@@ -21,4 +21,4 @@ flag = codecs.decode(encrypted_flag, 'rot13')
 print(flag)
 ```
 
-**The Flag:** picoCTF{next_time_I'll_try_2_rounds_of_rot13_********}
+**The Flag:** `picoCTF{next_time_I'll_try_2_rounds_of_rot13_********}`

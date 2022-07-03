@@ -18,4 +18,4 @@ Use the terminal `cat` command:
 cat flag
 ```
 
-**The Flag:** picoCTF{s4n1ty_v3r1f13d_********}
+**The Flag:** `picoCTF{s4n1ty_v3r1f13d_********}`

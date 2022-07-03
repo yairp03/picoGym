@@ -15,4 +15,4 @@
 ## Solution 2:
 --
 
-**The Flag:** picoCTF{--}
+**The Flag:** `picoCTF{--}`
