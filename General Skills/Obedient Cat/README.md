@@ -13,9 +13,10 @@ In this challenge, the flag is in the given `flag` file.
 ## Solution 1:
 Open the `flag` file in a text editor.
 ## Solution 2:
-Use the terminal `cat` command:
+Use the terminal [cat](https://man7.org/linux/man-pages/man1/cat.1.html) command:
 ```sh
-cat flag
+$ cat flag
+picoCTF{s4n1ty_v3r1f13d_********}
 ```
 
 **The Flag:** `picoCTF{s4n1ty_v3r1f13d_********}`
