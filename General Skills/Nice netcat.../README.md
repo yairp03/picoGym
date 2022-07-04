@@ -74,4 +74,9 @@ while True:
 
 print(result)
 ```
+We can use [pipelines](https://www.gnu.org/software/bash/manual/html_node/Pipelines.html) to run the script:
+```sh
+$ nc mercury.picoctf.net 22342 | python3 script.py
+picoCTF{g00d_k1tty!_n1c3_k1tty!_5fb5e51d}
+```
 **The Flag:** `picoCTF{g00d_k1tty!_n1c3_k1tty!_5fb5e51d}`
