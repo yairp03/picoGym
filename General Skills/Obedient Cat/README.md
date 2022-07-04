@@ -14,7 +14,7 @@ In this challenge, the flag is in the given `flag` file.
 ## Solution 1:
 Open the `flag` file in a text editor.
 ## Solution 2:
-Use the terminal [cat](https://man7.org/linux/man-pages/man1/cat.1.html) command:
+Use the terminal [cat](https://linux.die.net/man/1/cat) command:
 ```sh
 $ cat flag
 picoCTF{s4n1ty_v3r1f13d_f28ac910}
