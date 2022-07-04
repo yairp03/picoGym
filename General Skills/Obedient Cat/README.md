@@ -17,7 +17,7 @@ Open the `flag` file in a text editor.
 Use the terminal [cat](https://man7.org/linux/man-pages/man1/cat.1.html) command:
 ```sh
 $ cat flag
-picoCTF{s4n1ty_v3r1f13d_********}
+picoCTF{s4n1ty_v3r1f13d_f28ac910}
 ```
 
-**The Flag:** `picoCTF{s4n1ty_v3r1f13d_********}`
+**The Flag:** `picoCTF{s4n1ty_v3r1f13d_f28ac910}`
