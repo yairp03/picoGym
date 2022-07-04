@@ -45,9 +45,12 @@ Megapixels                      : 4.1
 ```  
 We can see the license is a base64 encoded string so let's decode it.
 ## Solution 1
-using [this cyberchef recipe](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)).
+Use [this cyberchef recipe](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)):
+```
+From_Base64('A-Za-z0-9+/=',true,false)
+```
 ## Solution 2
-Using python's builtin [base64](https://docs.python.org/3/library/base64.html) library:
+Use python's builtin [base64](https://docs.python.org/3/library/base64.html) library:
 ```py
 import base64
 

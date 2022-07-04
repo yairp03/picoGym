@@ -10,7 +10,10 @@ Cryptography can be easy, do you know what ROT13 is? `cvpbPGS{arkg_gvzr_V'yy_gel
 # Solution
 According to the description, the file is encrypted with the [ROT13](https://en.wikipedia.org/wiki/ROT13) cipher, and to retrieve the flag, we'll have to decrypt it.
 ## Solution 1:
-Use [this CyberChef recipe](https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)).
+Use [this CyberChef recipe](https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)):
+```
+ROT13(true,true,false,13)
+```
 ## Solution 2:
 Use python's builtin [codecs](https://docs.python.org/3/library/codecs.html) library:
 ```py
