@@ -2,6 +2,7 @@
 **Author:** [yairp03](https://github.com/yairp03)  
 **Category:** General Skills  
 **Points:** 5
+
 # Challenge
 ## Description
 This file has a flag in plain sight (aka "in-the-clear").
