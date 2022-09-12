@@ -52,7 +52,7 @@ print(flag)
 
 Now let's pipe the content of [enc](./enc) into the [decrypter](./decrypt.py):
 
-```sh
+```bash
 $ cat enc | python3 decrypt.py
 picoCTF{16_bits_inst34d_of_8_e141a0f7}
 ```

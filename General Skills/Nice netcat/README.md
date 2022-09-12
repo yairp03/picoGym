@@ -14,7 +14,7 @@ There is a nice program that you can talk to by using this command in a shell: `
 
 Let's run this [netcat](https://linux.die.net/man/1/nc) command:
 
-```sh
+```bash
 $ nc mercury.picoctf.net 22342
 112
 105
@@ -89,7 +89,7 @@ print(result)
 
 We can use [pipelines](https://www.gnu.org/software/bash/manual/html_node/Pipelines.html) to run the script:
 
-```sh
+```bash
 $ nc mercury.picoctf.net 22342 | python3 script.py
 picoCTF{g00d_k1tty!_n1c3_k1tty!_5fb5e51d}
 ```

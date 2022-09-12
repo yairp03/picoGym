@@ -18,7 +18,7 @@ Files can always be changed in a secret way. Can you find the flag? [cat.jpg](./
 
 Giving an image, let's start by running [exiftool](https://linux.die.net/man/1/exiftool) to see the metadata of the image:
 
-```sh
+```bash
 $ exiftool cat.jpg
 ExifTool Version Number         : 12.40
 File Name                       : cat.jpg
