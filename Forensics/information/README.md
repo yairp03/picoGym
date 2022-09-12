@@ -1,16 +1,23 @@
 # information
+
 **Author:** [yairp03](https://github.com/yairp03)  
 **Category:** Forensics  
-**Points:**  10
+**Points:** 10
 
 # Challenge
+
 ## Description
+
 Files can always be changed in a secret way. Can you find the flag? [cat.jpg](./cat.jpg)
+
 ## Source
+
 [cat.jpg](./cat.jpg) (JPEG image)
 
 # Solution
+
 Giving an image, let's start by running [exiftool](https://linux.die.net/man/1/exiftool) to see the metadata of the image:
+
 ```sh
 $ exiftool cat.jpg
 ExifTool Version Number         : 12.40
@@ -42,15 +49,22 @@ Color Components                : 3
 Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
 Image Size                      : 2560x1598
 Megapixels                      : 4.1
-```  
+```
+
 We can see the license is a base64 encoded string so let's decode it.
+
 ## Solution 1
-Use [this cyberchef recipe](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)):
+
+Use [this cyberchef recipe](<https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)>):
+
 ```
 From_Base64('A-Za-z0-9+/=',true,false)
 ```
+
 ## Solution 2
+
 Use python's builtin [base64](https://docs.python.org/3/library/base64.html) library:
+
 ```py
 import base64
 
