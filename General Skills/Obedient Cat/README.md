@@ -26,7 +26,7 @@ Open the `flag` file in a text editor.
 
 Use the terminal [cat](https://linux.die.net/man/1/cat) command:
 
-```sh
+```bash
 $ cat flag
 picoCTF{s4n1ty_v3r1f13d_f28ac910}
 ```
