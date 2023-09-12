@@ -8,7 +8,7 @@
 
 ## Description
 
-This file has a flag in plain sight (aka "in-the-clear").
+This file has a flag in plain sight (aka "in-the-clear"). [Download flag.](./flag)
 
 ## Source
 
@@ -16,7 +16,14 @@ This file has a flag in plain sight (aka "in-the-clear").
 
 # Solution
 
-In this challenge, the flag is in the given `flag` file.
+In this challenge, we're given a file named `flag`. We can use the [file](https://linux.die.net/man/1/file) command to determine the file type:
+
+```bash
+$ file flag
+flag: ASCII text
+```
+
+The file is a text file, so we can open it in a text editor or print its contents to the terminal. Looking at the contents of the file, we can see that it contains the flag.
 
 ## Solution 1:
 
