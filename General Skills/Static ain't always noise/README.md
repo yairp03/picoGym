@@ -12,12 +12,12 @@ Can you look at the data in this binary: [static](./static)? This [BASH script](
 
 ## Source
 
-[static](./static) (ELF 64-bit)
+[static](./static) (ELF 64-bit)  
 [ltdis.sh](./ltdis.sh) (Bash script)
 
 # Solution
 
-We got a binary file, but running it doesn't give us anything useful:
+We got a `ELF` file, but running it doesn't give us anything useful:
 
 ```bash
 $ ./static
@@ -47,7 +47,7 @@ picoCTF{d15a5m_t34s3r_98d35619}
 
 ## Solution 2:
 
-The bash scripts actually runs `strings` on the binary, so we can just run it ourselves:
+The bash scripts actually runs the [strings](https://linux.die.net/man/1/strings) command on the binary, so we can just run it ourselves:
 
 ```bash
 $ strings static | grep pico
