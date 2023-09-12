@@ -16,8 +16,8 @@ Matryoshka dolls are a set of wooden dolls of decreasing size placed one inside 
 
 # Solution
 
-In this challenge we get a JPEG image of a Matryoshka doll. The description hints that there are more dolls inside the image, and we need to find the final one.
-The tool [binwalk](https://github.com/ReFirmLabs/binwalk) can help with extracting hidden files. Let's run it (`-e` for extraction):
+In this challenge we get a `JPEG` image of a Matryoshka doll. The description hints that there are more dolls inside the image, and we need to find the final one.
+The tool [binwalk](/Guides/Tools/binwalk.md) can help with extracting hidden files. Let's run it (`-e` for extraction):
 
 ```bash
 $ binwalk -e dolls.jpg
@@ -28,7 +28,7 @@ base_images/2_c.jpg
 
 We got another image, of a smaller doll. Let's continue with this process:
 
-```
+```bash
 $ cd _dolls.jpg.extracted/base_images/
 $ binwalk -e 2_c.jpg
 ...
