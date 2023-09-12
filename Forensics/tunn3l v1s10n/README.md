@@ -16,11 +16,11 @@ We found this [file](./tunn3l_v1s10n). Recover the flag.
 
 # Solution
 
-Here we get a file with some binary data, and the description hints that we need to recover the flag from it. Let's open it in 010 Editor and see what we can find:
+Here we get a file with some binary data, and the description hints that we need to recover the flag from it. Let's open it in a [hex editor](/Guides/Tools/Hex%20Editors.md) and see what we can find:
 
 ![010 Editor](./010_editor_1.png)
 
-We can see that the file starts with the bytes `42 4D` (BM), and searching it in [GCK's File Signatures Table](https://www.garykessler.net/library/file_sigs.html), we can see that it's the signature of a BMP file. We change the file extension to `.bmp`, but we still can't open it. Let's run the `BMP` template in 010 Editor and look at the fields:
+We can see that the file starts with the bytes `42 4D` (BM), and with the help of [GCK's File Signatures Table](https://www.garykessler.net/library/file_sigs.html), we find out that it's the signature of a BMP file. We change the file extension to `.bmp`, but we still can't open it. Let's run the `BMP` template in [010 Editor](/Guides/Tools/Hex%20Editors.md#010-editor) and look at the fields:
 
 ![010 Editor](./010_editor_2.png)
 
@@ -33,7 +33,7 @@ We got a picture, but it doesn't has the flag. Let's continue looking at the ima
 
 ![010 Editor](./010_editor_4.png)
 
-The `biSizeImage` states the size of the pixel data, and it's value is `2893400`, but the size of the image data in the template is `0xFE4D8` which is the height of the image (306, blue) times the width of a line (0xD4C, green). This number is smaller, meaning the dimentions are probably incorrect as there is data that is unused. To calculate the actual height of the image, we can divide the size of the pixel data (2893400) by the width of a line (0xD4C) and get `850`. We can change the `biHeight` field to `850`, open the image and there we have it:
+The `biSizeImage` states the size of the pixel data, and it's value is `2893400`, but the size of the image data in the template is `0xFE4D8` which is the height of the image (`306`, blue) times the width of a line (`0xD4C`, green). This number is smaller, meaning the dimentions are probably incorrect as there is data that is unused. To calculate the actual height of the image, we can divide the size of the pixel data (`2893400`) by the width of a line (`0xD4C`) and get `850`. We can change the `biHeight` field to `850`, open the image and there we have it:
 
 ![Second Image](./picture_2.jpeg)
 
