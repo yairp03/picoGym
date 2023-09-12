@@ -17,7 +17,7 @@ I wonder what this really is... [enc](./enc)
 
 # Solution
 
-According to the description, we can understand that the text in the [enc](./enc) file is encrypted text, and it was encrypted with this python script.  
+According to the given file's name - [enc](./enc), we can guess that it has encrypted text, and it was encrypted with the given python script.  
 Let's break down this oneliner:
 
 ```py
@@ -31,8 +31,8 @@ for i in range(0, len(flag), 2):
 enc = ''.join(a)
 ```
 
-We see that each time the script takes two characters from the flag, and attaches their binary presentation to create a new character.  
-Now that we understand this, we can try to reverse it:
+We can see that the script iterates the flag, two characters at a time, and attaches their binary presentation to create a new `Unicode` character.  
+Now that we understand this, we can write a script to reverse it:
 
 ```py
 enc = input()
