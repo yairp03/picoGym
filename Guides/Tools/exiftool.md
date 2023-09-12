@@ -1,6 +1,6 @@
 # Exiftool
 
-`exiftool` is a tool that allows you to read, write and edit metadata from files. It is available on Linux, Windows and Mac.
+Exiftool is a tool that allows you to read, write and edit metadata from files. It is available on Linux, Windows and Mac.
 
 ## Installation
 
