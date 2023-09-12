@@ -16,7 +16,9 @@ Files can always be changed in a secret way. Can you find the flag? [cat.jpg](./
 
 # Solution
 
-Giving an image, let's start by running [exiftool](https://linux.die.net/man/1/exiftool) to see the metadata of the image:
+In this challenge, we are given an image. A useful tool when dealing with images, called [exiftool](/Guides/Tools/exiftool.md), and it can be used to extract metadata from images.
+
+Let's run it on our image:
 
 ```bash
 $ exiftool cat.jpg
@@ -51,11 +53,11 @@ Image Size                      : 2560x1598
 Megapixels                      : 4.1
 ```
 
-We can see the license is a base64 encoded string so let's decode it.
+One thing that stands out is the `License` field, which instead of containing a normal textual license, it contains a string that looks `base64` encoded. We can decode it in multiple ways, here are some of them:
 
 ## Solution 1
 
-Use [this cyberchef recipe](<https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)>):
+Use [CyberChef](/Guides/Tools/CyberChef.md) with [this recipe](<https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)>):
 
 ```
 From_Base64('A-Za-z0-9+/=',true,false)
@@ -72,6 +74,10 @@ encoded_flag = 'cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9'
 flag = base64.b64decode(encoded_flag).decode()
 
 print(flag)
+```
+
+```
+picoCTF{the_m3tadata_1s_modified}
 ```
 
 **The Flag:** `picoCTF{the_m3tadata_1s_modified}`
