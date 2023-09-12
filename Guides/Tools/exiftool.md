@@ -16,6 +16,12 @@ Download the executable from [here](https://exiftool.org/).
 
 For further installation instructions, check out the tool's [homepage](https://exiftool.org/).
 
+## Usage
+
+```bash
+$ exiftool <file>
+```
+
 ## Further Reading
 
 - [Exiftool Website](https://exiftool.org/)
