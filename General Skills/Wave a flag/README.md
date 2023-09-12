@@ -20,17 +20,17 @@ By running the [file](https://linux.die.net/man/1/file) command we see that the 
 
 ```bash
 $ file warm
-warm: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=b11c22752c901adc13ba1ce86eda9d5516f22763, with debug_info, not stripped
+warm: ELF 64-bit ...
 ```
 
-Let's check the file permissions by using the [ls](https://linux.die.net/man/1/ls) command with the `-l` flag:
+It's an `ELF` file. Let's check the file permissions by using the [ls](https://linux.die.net/man/1/ls) command with the `-l` flag:
 
 ```bash
 $ ls -l
 -rw-r--r--  1 yair  staff  10936 Jul  4 13:09 warm
 ```
 
-We see it doesn't have an execute permission, so we can add this with [chmod](https://linux.die.net/man/1/chmod):
+We can see it doesn't have an execute permission, so we can add this with the [chmod](https://linux.die.net/man/1/chmod) command:
 
 ```bash
 $ chmod +x warm
@@ -45,7 +45,7 @@ $ ./warm
 Hello user! Pass me a -h to learn what I can do!
 ```
 
-Following the instructions:
+And follow the instructions:
 
 ```bash
 $ ./warm -h
