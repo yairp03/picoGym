@@ -25,7 +25,7 @@ n: 14224508089447013442619037486215629987842436620423033913626920438237167837716
 e: 65537
 ```
 
-These letters has a meaning in [RSA Cryptosystem](https://en.wikipedia.org/wiki/RSA_(cryptosystem)): `c` is the encrypted message, `n` is the modulus, and `e` is the public exponent. The modulus is relatively small, so it can be factored, for example using [factordb](http://factordb.com/). There are tools that can do it for us, let's review two of them.
+These letters has a meaning in [RSA Cryptosystem](<https://en.wikipedia.org/wiki/RSA_(cryptosystem)>): `c` is the encrypted message, `n` is the modulus, and `e` is the public exponent. The modulus is relatively small, so it can be factored, for example using [factordb](http://factordb.com/). There are tools that can do it for us, let's review two of them.
 
 ## Solution 1:
 
