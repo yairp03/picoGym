@@ -32,6 +32,11 @@ print(f'picoCTF{{1n_7h3_|<3y_of_{get_dynamic_part(b"FREEMAN")}}}')
 ```bash
 $ python ./script.py
 picoCTF{1n_7h3_|<3y_of_0d208392}
+```
+
+We can check that the flag is correct by running the program with the flag as the license key:
+
+```
 $ python ./keygenme-trial.py
 Menu:
 ...
@@ -47,6 +52,6 @@ Exiting trial version...
 ...
 ```
 
-And we got the confirmation that the flag is correct.
+And we got the confirmation that the flag is indeed correct.
 
 **The Flag:** `picoCTF{1n_7h3_|<3y_of_0d208392}`
