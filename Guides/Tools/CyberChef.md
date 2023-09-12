@@ -10,4 +10,5 @@ For more information, and usage examples, check out the project on [GitHub](http
 
 ## Further Reading
 
+- [CyberChef Website](https://gchq.github.io/CyberChef/)
 - [CyberChef on GitHub](https://github.com/gchq/CyberChef)
