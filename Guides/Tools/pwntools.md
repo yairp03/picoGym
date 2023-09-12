@@ -68,7 +68,7 @@ These objects have useful functions for sending and receiving data. Some of them
 - `p8`, `p16`, `p32`, `p64`: Packs an integer into a byte string.
 - `u8`, `u16`, `u32`, `u64`: Unpacks a byte string into an integer.
 
-### Further Reading
+## Further Reading
 
-- [pwntools documentation](https://docs.pwntools.com/en/stable/)
-- [pwntools github](https://github.com/Gallopsled/pwntools)
+- [pwntools Documentation](https://docs.pwntools.com/en/stable/)
+- [pwntools on GitHub](https://github.com/Gallopsled/pwntools)
