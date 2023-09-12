@@ -16,7 +16,7 @@ According to the description, the file is encrypted with the [ROT13](https://en.
 
 ## Solution 1:
 
-Use [this CyberChef recipe](<https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)>):
+Use [CyberChef](/Guides/Tools/CyberChef.md) with [this recipe](<https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)>):
 
 ```
 ROT13(true,true,false,13)
