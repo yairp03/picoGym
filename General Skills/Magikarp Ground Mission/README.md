@@ -60,6 +60,11 @@ ctf-player@pico-chall$ cat 3of3.flag.txt
 1118a9a4}
 ```
 
+A short explanation of the special directories we used:
+
+- `/` - The root directory, the top of the directory hierarchy.
+- `~` - The home directory of the current user.
+
 Concatenate the three parts and we get the flag.
 
 **The Flag:** `picoCTF{xxsh_0ut_0f_\/\/4t3r_1118a9a4}`
