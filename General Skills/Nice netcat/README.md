@@ -64,15 +64,15 @@ We got a bunch of numbers, and it looks like they are decimal values of ASCII ch
 
 ## Solution 1:
 
-Use [this cyberchef recipe](<https://gchq.github.io/CyberChef/#recipe=From_Decimal('Space',false)>):
+Use [CyberChef](/Guides/Tools/CyberChef.md) with [this recipe](<https://gchq.github.io/CyberChef/#recipe=From_Decimal('CRLF',false)>):
 
 ```
-From_Decimal('Space',false)
+From_Decimal('CRLF',false)
 ```
 
 ## Solution 2:
 
-Using [this python script](./script.py):
+Using Python:
 
 ```py
 result = ''
