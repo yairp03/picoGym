@@ -71,4 +71,4 @@ These objects have useful functions for sending and receiving data. Some of them
 ## Further Reading
 
 - [pwntools Documentation](https://docs.pwntools.com/en/stable/)
-- [pwntools on GitHub](https://github.com/Gallopsled/pwntools)
+- [pwntools GitHub Repository](https://github.com/Gallopsled/pwntools)

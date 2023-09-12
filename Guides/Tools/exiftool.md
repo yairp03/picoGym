@@ -24,5 +24,6 @@ $ exiftool <file>
 
 ## Further Reading
 
-- [Exiftool Website](https://exiftool.org/)
 - `$ man exiftool`
+- [Exiftool Website](https://exiftool.org/)
+- [Exiftool GitHub Repository](https://github.com/exiftool/exiftool)
