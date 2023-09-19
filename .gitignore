@@ -1,9 +1,43 @@
-# Obsidian
-.obsidian/
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,obsidian,idapro
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,obsidian,idapro
 
-# IDA
+### IDAPro ###
+# gitginore template for IDA Pro
+# website: https://www.hex-rays.com/index.shtml
+
+# IDA Pro Runtime temporary file
 *.id0
 *.id1
 *.id2
 *.nam
 *.til
+
+# IDA Pro 64 packaged data
+# *.i64
+# IDA Pro 32 packaged data
+# *.idb
+
+### Obsidian ###
+# config dir
+.obsidian/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,obsidian,idapro
