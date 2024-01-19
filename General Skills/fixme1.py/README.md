@@ -8,7 +8,7 @@
 
 ## Description
 
-Fix the syntax error in this Python script to print the flag.
+Fix the syntax error in this Python script to print the flag.  
 [Download Python script](./fixme1.py)
 
 ## Source
