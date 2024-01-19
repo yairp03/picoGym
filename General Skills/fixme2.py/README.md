@@ -20,7 +20,7 @@ Fix the syntax error in this Python script to print the flag.
 Opening the python script, we can see that there is a syntax error on line 22, and the expression is using an assignment operator (`-`) instead of an equality operator (`==`). Fixing the syntax and running the script, we get the flag:
 
 ```
-$ python fixme2.py
+$ python3 fixme2.py
 That is correct! Here's your flag: picoCTF{3qu4l1ty_n0t_4551gnm3nt_e8814d03}
 ```
 
