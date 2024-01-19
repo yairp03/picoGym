@@ -24,7 +24,7 @@ We can see that the file starts with the bytes `42 4D` (BM), and with the help o
 
 ![010 Editor](./010_editor_2.png)
 
-We can see something weird here, the `bfOffBits` and the `biSize` fields, which are pointer to the start of the pixel data and the size of the info header, respectively, are both `53434`, which is much larger than it should be, as the expected values are `54` (The start of the pixel data) and `40` (The size of the info header). Let's change them to the expected values and see what happens:
+Comparing these fields to a normal bmp, we can see something weird here, the `bfOffBits` and the `biSize` fields, which are pointer to the start of the pixel data and the size of the info header, respectively, are both `53434`, which is much larger than it should be, as the expected values are `54` (The start of the pixel data) and `40` (The size of the info header). Let's change them to the expected values and see what happens:
 
 ![010 Editor](./010_editor_3.png)
 ![First Image](./picture_1.png)
